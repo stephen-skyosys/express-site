@@ -191,6 +191,8 @@ h6 {
   color: #2487ce;
 }
 
+
+
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
@@ -547,7 +549,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 80px 0;
-  overflow: hidden;
+  /* overflow-y: hidden; */
 }
 
 .section-bg {
@@ -556,6 +558,7 @@ section {
 
 .section-title {
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -573,6 +576,7 @@ section {
   font-size: 14px;
   color: #919191;
 }
+
 
 /*--------------------------------------------------------------
 # About
@@ -917,6 +921,43 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#services:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#services .container {
+  padding-top: 80px;
+}
+
+#services h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #124265;
+  font-family: "Poppins", sans-serif;
+}
+
+#services h2 {
+  color: #5e5e5e;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -1045,6 +1086,33 @@ section {
 
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+}
+
+
+@media (min-width: 1024px) {
+  #services {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-height: 800px) {
+  #services {
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  #services {
+    height: auto;
+  }
+  #services h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #services h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 /*--------------------------------------------------------------
