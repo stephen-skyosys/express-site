@@ -121,7 +121,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: #fff;
+  background: #124265;
   z-index: 997;
   padding: 15px 0;
   border-bottom: 1px solid #e6f2fb;
@@ -179,7 +179,7 @@ h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #124265;
+  color: #fff;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -188,7 +188,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-  color: #2487ce;
+  color: #fff;
 }
 
 
@@ -1704,7 +1704,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button {
   background: #2487ce;
   border: 0;
   padding: 10px 30px;
@@ -1904,7 +1904,7 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
@@ -1986,19 +1986,16 @@ section {
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: -1px;
-  right: -2px;
-  bottom: -1px;
+#footer .footer-newsletter button {
+  
   border: 0;
   background: none;
   font-size: 16px;
-  padding: 0 20px 2px 20px;
+  padding: 8px;
   background: #2487ce;
   color: #fff;
   transition: 0.3s;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
