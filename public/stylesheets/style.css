@@ -317,7 +317,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #124265;
+  color:#fff;
 }
 
 .mobile-nav {
@@ -328,7 +328,7 @@ h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #124265;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -345,18 +345,18 @@ h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #124265;
+  color: #fff;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
-.mobile-nav a:hover,
+/* .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
   color: #2487ce;
   text-decoration: none;
-}
+} */
 
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
