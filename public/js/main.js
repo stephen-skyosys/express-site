@@ -1,3 +1,5 @@
+
+
 /**
 * Template Name: OnePage - v2.2.1
 * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
@@ -220,16 +222,32 @@
 
 
 function SubForm (){
-  $.ajax({
-    url:"https://api.apispreadsheets.com/data/7046/",
-    type:"post",
-    data:$("#myForm").serializeArray(),
-    success: function(){
-      alert("Form Data Submitted :)")
-    },
-    error: function(){
-      alert("There was an error :(")
-    }
-  });
+  const userName = document.getElementById('name1').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+  
+  if (userName != "" && email != "" && subject != "" && message != "" && userName != " " && email != " " && subject  != " " && message != " ") {
+    $.ajax({
+      url:"https://api.apispreadsheets.com/data/7046/",
+      type:"post",
+      data:$("#myForm").serializeArray(),
+      success: function(){
+        swal(
+          'Successful','Your form has been submitted successfully, We will get back to you soon!!!','success'
+        )
+      },
+      error: function(){
+        swal(
+          'Failed','You have entered incorrect credentials, Please try again!!','error'
+        )
+      }
+    });
+  } else {
+    swal(
+      'Unsuccessful','All fields are mandatory','warning'
+    )
+  }
+  
 }
 
