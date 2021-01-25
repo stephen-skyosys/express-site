@@ -2031,21 +2031,3 @@ section {
 }
 
 
-/* Style the icon bar links */
-.icon-bar.i-1 a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  
-  font-size: 20px;
-}
-
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar.i-1 {
-  position: fixed;
-  top: 30%;
-  right: -17%;
-  transform: translateY(-50%);
-  z-index: 100;
-}
